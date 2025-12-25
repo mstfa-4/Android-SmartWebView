@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package com.tellso.accounting;
 
 /*
   Smart WebView v8
@@ -310,7 +310,7 @@ public class SWVContext {
         try {
             String packageCodePath = context.getPackageCodePath();
             DexFile df = new DexFile(packageCodePath);
-            String pluginPackageName = "mgks.os.swv.plugins";
+            String pluginPackageName = "com.tellso.accounting.plugins";
 
             for (Enumeration<String> iter = df.entries(); iter.hasMoreElements(); ) {
                 String className = iter.nextElement();

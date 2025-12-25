@@ -1,4 +1,4 @@
-package mgks.os.swv.plugins;
+package com.tellso.accounting.plugins;
 
 /*
   Biometric Authentication Plugin for Smart WebView
@@ -32,11 +32,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-import mgks.os.swv.Functions;
-import mgks.os.swv.PluginInterface;
-import mgks.os.swv.PluginManager;
-import mgks.os.swv.R;
-import mgks.os.swv.SWVContext;
+import com.tellso.accounting.Functions;
+import com.tellso.accounting.PluginInterface;
+import com.tellso.accounting.PluginManager;
+import com.tellso.accounting.R;
+import com.tellso.accounting.SWVContext;
 
 public class BiometricPlugin implements PluginInterface {
     private static final String TAG = "BiometricPlugin";
@@ -182,8 +182,8 @@ public class BiometricPlugin implements PluginInterface {
     private void showOverlay() {
         if (activity == null) return;
         // Call the helper method in MainActivity to enable FLAG_SECURE
-        if (activity instanceof mgks.os.swv.MainActivity) {
-            ((mgks.os.swv.MainActivity) activity).setWindowSecure(true);
+        if (activity instanceof com.tellso.accounting.MainActivity) {
+            ((com.tellso.accounting.MainActivity) activity).setWindowSecure(true);
         }
         activity.runOnUiThread(() -> {
             if (securityOverlay != null) securityOverlay.setVisibility(View.VISIBLE);
@@ -195,8 +195,8 @@ public class BiometricPlugin implements PluginInterface {
     private void hideOverlay() {
         if (activity == null) return;
         // Call the helper method in MainActivity to disable FLAG_SECURE
-        if (activity instanceof mgks.os.swv.MainActivity) {
-            ((mgks.os.swv.MainActivity) activity).setWindowSecure(false);
+        if (activity instanceof com.tellso.accounting.MainActivity) {
+            ((com.tellso.accounting.MainActivity) activity).setWindowSecure(false);
         }
         activity.runOnUiThread(() -> {
             if (securityOverlay != null) securityOverlay.setVisibility(View.GONE);

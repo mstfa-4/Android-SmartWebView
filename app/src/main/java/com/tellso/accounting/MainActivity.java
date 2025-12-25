@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package com.tellso.accounting;
 
 /*
   Smart WebView v8
@@ -99,7 +99,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.regex.Matcher;
 
-import mgks.os.swv.plugins.QRScannerPlugin;
+import com.tellso.accounting.plugins.QRScannerPlugin;
 
 /**
  * Main Activity for Smart WebView
