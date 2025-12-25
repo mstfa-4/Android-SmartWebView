@@ -1,4 +1,4 @@
-package mgks.os.swv.plugins;
+package com.tellso.accounting.plugins;
 
 /*
   Toast Plugin for Smart WebView
@@ -29,11 +29,11 @@ import androidx.annotation.NonNull;
 import java.util.HashMap;
 import java.util.Map;
 
-import mgks.os.swv.Functions;
-import mgks.os.swv.PluginInterface;
-import mgks.os.swv.PluginManager;
+import com.tellso.accounting.Functions;
+import com.tellso.accounting.PluginInterface;
+import com.tellso.accounting.PluginManager;
 // Removed R import as it's not directly used for findViewById anymore for the webview.
-// If other R references are needed, it should be mgks.os.swv.R
+// If other R references are needed, it should be com.tellso.accounting.R
 
 public class ToastPlugin implements PluginInterface {
     private static final String TAG = "ToastPlugin";

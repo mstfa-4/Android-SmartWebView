@@ -1,4 +1,4 @@
-package mgks.os.swv.plugins;
+package com.tellso.accounting.plugins;
 
 /*
   Location Plugin for Smart WebView
@@ -49,11 +49,11 @@ import androidx.core.app.ActivityCompat;
 import java.util.HashMap;
 import java.util.Map;
 
-import mgks.os.swv.Functions;
-import mgks.os.swv.PermissionManager;
-import mgks.os.swv.PluginInterface;
-import mgks.os.swv.PluginManager;
-import mgks.os.swv.SWVContext;
+import com.tellso.accounting.Functions;
+import com.tellso.accounting.PermissionManager;
+import com.tellso.accounting.PluginInterface;
+import com.tellso.accounting.PluginManager;
+import com.tellso.accounting.SWVContext;
 
 public class LocationPlugin implements PluginInterface, LocationListener {
     private static final String TAG = "LocationPlugin";

@@ -1,4 +1,4 @@
-package mgks.os.swv.plugins;
+package com.tellso.accounting.plugins;
 
 /*
   Rating Plugin for Smart WebView
@@ -35,10 +35,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import mgks.os.swv.Functions;
-import mgks.os.swv.PluginInterface;
-import mgks.os.swv.PluginManager;
-import mgks.os.swv.SWVContext;
+import com.tellso.accounting.Functions;
+import com.tellso.accounting.PluginInterface;
+import com.tellso.accounting.PluginManager;
+import com.tellso.accounting.SWVContext;
 
 public class RatingPlugin implements PluginInterface {
     private static final String TAG = "RatingPlugin";

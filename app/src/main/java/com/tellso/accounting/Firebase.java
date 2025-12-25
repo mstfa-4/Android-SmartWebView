@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package com.tellso.accounting;
 
 /*
   Smart WebView v8

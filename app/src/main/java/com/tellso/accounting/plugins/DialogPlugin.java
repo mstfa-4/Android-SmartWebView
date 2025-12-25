@@ -1,4 +1,4 @@
-package mgks.os.swv.plugins;
+package com.tellso.accounting.plugins;
 
 /*
   Dialog Plugin for Smart WebView
@@ -48,9 +48,9 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import mgks.os.swv.Functions;
-import mgks.os.swv.PluginInterface;
-import mgks.os.swv.PluginManager;
+import com.tellso.accounting.Functions;
+import com.tellso.accounting.PluginInterface;
+import com.tellso.accounting.PluginManager;
 
 public class DialogPlugin implements PluginInterface {
     private static final String TAG = "DialogPlugin";
