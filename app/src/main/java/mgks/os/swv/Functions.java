@@ -133,9 +133,11 @@ public class Functions{
 				}
 			} else {
 				// Check to see whether the url already has query parameters and handle appropriately
+				/* اگر این بخش غیرفعال نشود، فایل‌های استاتیک در بارگذاری‌های بعدی می‌شکنند
 				if (!url.startsWith("file://")) {
 					url = url + (url.contains("?") ? "&" : "?") + "rid=" + random_id();
 				}
+				*/
 				SWVContext.asw_view.loadUrl(url);
 			}
 		}

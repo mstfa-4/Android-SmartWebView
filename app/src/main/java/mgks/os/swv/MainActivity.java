@@ -396,6 +396,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         webSettings.setAllowUniversalAccessFromFileURLs(true);
         webSettings.setUseWideViewPort(true);
         webSettings.setDomStorageEnabled(true);
+		webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
 
         // Allow third-party cookies for captcha, social logins, etc.
