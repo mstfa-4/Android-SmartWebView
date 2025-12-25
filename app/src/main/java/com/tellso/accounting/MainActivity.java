@@ -371,6 +371,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Configure WebView settings
         WebSettings webSettings = SWVContext.asw_view.getSettings();
+		    
+		// پاک کردن کش برای جلوگیری از بارگذاری فایل‌های خراب یا قدیمی
+		SWVContext.asw_view.clearCache(true); 
+
+		// تغییر حالت کش به LOAD_NO_CACHE برای اجبار به دانلود مجدد فایل‌ها
+		webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
 
         // Configure user agent
         if (SWVContext.OVERRIDE_USER_AGENT || SWVContext.POSTFIX_USER_AGENT) {
